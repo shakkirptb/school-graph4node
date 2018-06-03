@@ -1,0 +1,40 @@
+{
+  "name": "school-graph4node",
+  "version": "1.0.0",
+  "description": "sample project using graph4node",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakkirptb/school-graph4node.git"
+  },
+  "dependencies": {
+    "graph4node": "^1.0.3",
+    "node4node": "*",
+    "ootil": "*"
+  },
+  "keywords": [
+    "neo4j",
+    "graph",
+    "nosql",
+    "graph 4 node",
+    "graph4node",
+    "school-graph4node",
+    "node js",
+    "array",
+    "query",
+    "relation",
+    "query array"
+  ],
+  "author": "Muhammed Shakkir TK<shakkirptb@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shakkirptb/school-graph4node/issues"
+  },
+  "homepage": "https://github.com/shakkirptb/school-graph4node#readme"
+}
