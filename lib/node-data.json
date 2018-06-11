@@ -3,17 +3,39 @@
 
 {"id":"person","isPartOf":["school"]},
 {"id":"course","isPartOf":["school"]},
+{"id":"subject","isPartOf":["school"]},
 
-{"id":"physics","isA":"course"},
-{"id":"chemistry","isA":"course"},
+{"id":"engineering","isA":"course"},
+{"id":"medicine","isA":"course"},
+{"id":"economics","isA":"course"},
+{"id":"politics","isA":"course"},
+
+{"id":"maths","isA":"subject","isPartOf":["engineering","economics"]},
+{"id":"physics","isA":"subject","isPartOf":["engineering"]},
+{"id":"chemistry","isA":"subject","isPartOf":["engineering","medicine"]},
+{"id":"biology","isA":"subject","isPartOf":["medicine"]},
+{"id":"accounting","isA":"subject","isPartOf":["economics"]},
+{"id":"history","isA":"subject","isPartOf":["politics"]},
+{"id":"constitution","isA":"subject","isPartOf":["politics"]},
+
+
 {"id":"teacher","isATypeOf":"person"},
 {"id":"student","isATypeOf":"person"},
 
-{"id":"susi","isA":"teacher","isPartOf":["physics"]},
-{"id":"thomas","isA":"teacher","isPartOf":["chemistry"]},
+{"id":"sasi","isA":"teacher","isPartOf":["maths"]},
+{"id":"john","isA":"teacher","isPartOf":["physics"]},
+{"id":"james","isA":"teacher","isPartOf":["chemistry"]},
+{"id":"susi","isA":"teacher","isPartOf":["biology"]},
+{"id":"thomas","isA":"teacher","isPartOf":["accounting"]},
+{"id":"kumar","isA":"teacher","isPartOf":["history"]},
+{"id":"nick","isA":"teacher","isPartOf":["constitution"]},
 
-{"id":"shakkir","isA":"student","marks":80,"isPartOf":["physics"]},
-{"id":"sameer","isA":"student","marks":60,"isPartOf":["physics"]},
-{"id":"appu","isA":"student","marks":90,"isPartOf":["chemistry"]},
-{"id":"raj","isA":"student","marks":70,"isPartOf":["chemistry"]}
+{"id":"shakkir","isA":"student","marks":80,"isPartOf":["engineering"]},
+{"id":"Tom","isA":"student","marks":65,"isPartOf":["engineering"]},
+{"id":"sameer","isA":"student","marks":60,"isPartOf":["medicine"]},
+{"id":"Jim","isA":"student","marks":78,"isPartOf":["medicine"]},
+{"id":"appu","isA":"student","marks":55,"isPartOf":["economics"]},
+{"id":"joseph","isA":"student","marks":92,"isPartOf":["economics"]},
+{"id":"raj","isA":"student","marks":85,"isPartOf":["politics"]},
+{"id":"adam","isA":"student","marks":74,"isPartOf":["politics"]}
 ]
